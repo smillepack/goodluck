@@ -1,0 +1,481 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+    padding: 0
+    margin: 0
+    font-family: RussoOne
+    box-sizing: border-box
+
+a 
+    color: white
+    // text-decoration: none
+
+$color-similar-black: #1d1d1d
+$color-similar-white: #f4f4f478
+$color-theme: #734d02
+$color-green: #734d02
+
+@font-face
+    font-family: 'RussoOne'
+    src: url('../fonts/RussoOne-Regular.ttf')
+
+img
+    width: 100%
+    height: 100%
+
+.blContainer
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    color: white
+    width: 100%
+
+header
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    color: white
+    background: $color-similar-black
+    width: 100%
+    box-shadow: inset 0px 0px 208px 109px black
+    background-size: cover
+    padding-bottom: 15px
+
+
+navbar
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.navbarContainer
+    width: 90%
+    display: flex
+    flex-direction: column
+
+
+.goodShit
+    display: none
+
+
+.navbarEl
+    text-transform: uppercase
+    border-bottom: 3px solid $color-theme
+    padding: 10px 0
+    color: white
+    text-decoration: none
+    cursor: pointer
+
+.littleContainer
+    display: flex 
+    width: 100%
+    padding: 20px
+
+
+
+.logoVideoContainer
+    padding: 20px 0
+
+.burgerMenu
+    display: flex
+    align-items: center
+    justify-content: center
+    background: transparent
+    border: 0
+    cursor: pointer
+    padding: 1px
+    margin-right: 20px
+    height: 32px
+
+    &:focus
+        outline: 0
+
+    & > img
+        width: 30px
+
+.logoForLittleTime
+    display: none
+    width: 200px
+    height: 200px
+    padding: 26px
+    // display: flex
+    justify-content: center
+    align-items: center
+
+
+main 
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.services
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 100%
+    background: $color-similar-white
+    padding: 0 10px
+
+.galleryContainer
+    display: flex 
+    flex-direction: row 
+    flex-wrap: wrap
+    width: 100%
+    
+    img 
+        &:not(:first-of-type)
+            width: 25%
+
+.galleryEl
+    object-fit: cover    
+
+.btnOrdere
+    border: 1px solid white
+    padding: 5px 10px
+    margin: 0 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+    text-decoration: none
+
+.servicesLogo
+    display: flex
+    width: 100%
+    padding: 15px 0
+    border-bottom: 2px solid $color-theme
+    justify-content: center
+    text-transform: uppercase
+
+.servicesContainer
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 100%
+    margin-top: 10px
+
+.servicesEl
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: 20px
+
+.servicesElImg
+
+.serviceElLogo
+    text-transform: uppercase
+    padding: 10px 0
+
+.serviceElPrice
+    width: 100%
+    padding: 0 10px
+    display: flex
+    flex-direction: column
+
+.serviceElPriceEl
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid $color-theme
+    padding: 8px 0
+    text-transform: uppercase
+    
+
+.priceText
+    text-transform: none
+    text-align: left
+
+.priceNumber
+    color: $color-green
+    text-align: right
+
+.sell
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 100%
+    background: $color-similar-black
+    padding: 0 10px    
+    color: white
+
+.sellLogo
+    display: flex
+    width: 100%
+    padding: 15px 0
+    border-bottom: 2px solid $color-theme
+    justify-content: center
+    text-transform: uppercase
+
+.logoContainer
+    display: flex 
+    justify-content: center
+    img 
+        width: 50%
+
+.sellText
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 10px 0
+
+    & > div:first-of-type
+        text-transform: uppercase
+        padding-bottom: 5px
+
+.contactsContainer
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 100%
+    background: $color-similar-black
+    // padding: 0 10px    
+    color: white    
+
+.gallery
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 100%
+    background: $color-similar-black
+    padding: 0 10px    
+    color: white    
+
+.galleryLogo
+    display: flex
+    width: 100%
+    padding: 15px 0
+    border-bottom: 2px solid $color-theme
+    justify-content: center
+    text-transform: uppercase
+    margin-bottom: 20px
+
+.galleryImg
+    padding-bottom: 5px
+
+.contacts
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 100%
+    background: $color-similar-black
+    // padding: 0 10px    
+    color: white    
+
+.contactsLogo
+    display: flex
+    width: 100%
+    padding: 15px 0
+    border-bottom: 2px solid $color-theme
+    justify-content: center
+    text-transform: uppercase
+    margin-bottom: 20px
+
+.contactsMain
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin-bottom: 20px
+
+.adminImgs
+    height: 180px
+    object-fit: contain
+
+.adimnNames
+    text-align: center
+
+.contactsFirst
+    text-transform: uppercase
+    margin-bottom: 10px
+
+.contactsMainInfo
+    display: flex 
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.contactsEl
+    display: flex
+    align-items: center
+    padding: 5px 0
+
+.contactsIcon
+    width: 20px
+
+.contactsInfo
+    margin-left: 20px 
+    color: white
+
+.contactsMap
+    background: $color-similar-black
+    width: 100%
+
+.adminMiniContainer
+    width: 300px
+    margin: 5px
+
+.adminPhotoContainer
+    display: flex
+    align-items: center
+    justify-content: center
+    & > img 
+        width: 180px
+        object-fit: cover
+
+.footerContainer
+    display: flex 
+    justify-content: center
+    justify-content: space-between
+    background: $color-similar-black
+    width: 100%
+    padding: 0 30px
+
+footer 
+    display: flex 
+    justify-content: center
+    background: $color-similar-black
+    width: 100%
+    padding: 20px 0
+
+
+
+.footerImg
+    width: 30px
+    height: 30px
+
+.footerImgContainer
+    img 
+        width: 30px
+        height: 30px    
+
+.footerAboutUs
+    color: white
+    width: 200px
+
+
+.headerImgsContainer
+    display: flex
+    justify-content: space-between
+    width: 300px
+    color: white
+    img 
+        width: 120px
+        height: 120px
+        object-fit: cover
+.c-red
+    color: red
+
+.disNone, .ds
+    display: none
+
+@media only screen and (min-width: 735px) 
+    .burgerMenu, .logoForLittleTime
+        display: none
+
+    .navbarContainer
+        display: flex
+        flex-direction: row
+    
+    .contactsMain
+        flex-direction: row
+
+    .logoVideoContainer, .contactsMainInfo
+        width: 50%
+    
+    .navbarEl
+        border: 3px solid white
+        padding: 5px 10px
+        margin: 0 5px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .goodShit
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $color-similar-black
+        background-size: cover
+        box-shadow: inset 0px 0px 168px 109px black
+        width: 100%
+        height: 400px
+            
+
+    .imgContainerLogo
+        width: 340px
+        padding: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .navbarPhone
+        width: 210px
+        margin: 0
+        margin-right: 5px
+
+
+    .servicesContainer
+        justify-content: center
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: flex-start
+
+    .servicesEl
+        width: 49%
+        padding: 5px
+
+    .sellSertificate
+        width: 400px
+    
+    .galleryImg
+        width: 49%
+        padding: 5px
+    .disNoneSpecial
+        display: none
+
+    .disNone
+        display: flex
+
+@media only screen and (min-width: 910px) 
+    .servicesContainer
+        justify-content: center
+    .servicesEl
+        width: 33%
+
+    .galleryImg
+        width: 33%
+
+@media only screen and (min-width: 1100px) 
+    .littleContainer, .servicesContainer, .galleryContainerS, .sellLogo, .contactsContainer, .footerContainer, .blContainer
+        width: 1000px
+    .navbarContainer 
+        width: 100%       
+
+    .footerContainer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 20px
+    .footerAboutUs
+        width: auto

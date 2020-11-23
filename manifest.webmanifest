@@ -1,0 +1,32 @@
+{
+    "short_name": "GOODLUCK",
+    "name": "Хороший щит",
+    "description": "Хороший щит работает с 10:00 - 21:00 и является крупным специалистом в области мужский и женских стрижек, бритья и укладки, окраске. Хорошие мастера и прекрасная атмосфера.",
+    "icons": [
+      {
+        "src": "192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      }
+    ],
+    "background_color": "#404040",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "http://goodluck.by/",
+    "prefer_related_applications": true,
+    "theme_color": "#404040",
+    "categories": ["парикмахерская", "салон красоты", "мужская стрижка", "окраска волос", "стрижка бороды" , "стрижка усов", "hair tattoo"],
+    "dir": "auto",
+    "serviceworker": {
+      "src": "/index.js"
+    },
+    "lang": "ru"
+}
+
