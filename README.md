@@ -1,11 +1,13 @@
-#Landing
+# Landing
 
-Technology stack :
+Layout cross-browser and adaptive.
 
-HTML
-CSS
-jQuery
-Link to the project: Landing
+**Technology stack :**
 
-https://smillepack.github.io/goodluck/
-http://goodluck.by/
+* HTML
+* CSS(SASS)
+* JS
+
+Link to the project: [Landing](https://smillepack.github.io/goodluck/)
+
+<!-- http://goodluck.by/ -->
