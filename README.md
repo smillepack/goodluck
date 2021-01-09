@@ -1,6 +1,6 @@
 # Landing
 
-Layout cross-browser and adaptive.
+Layout(PWA) cross-browser and adaptive.
 
 **Technology stack :**
 
